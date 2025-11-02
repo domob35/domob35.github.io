@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>소개 - 웹 접근성이란?</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-link">본문 바로가기</a>
+
+    <main id="mainContent" tabindex="0">
+      <section>
+        <h1>웹 접근성이란?</h1>
+        <ul>
+          <li>
+            웹 접근성은 장애 유무와 관계없이 누구나 웹 콘텐츠에 동등하게 접근할
+            수 있도록 보장하는 원칙입니다.
+          </li>
+          <li>
+            시력, 청각, 운동장애 등 다양한 사용자가 편리하게 사용할 수 있도록
+            설계·구현하는 것이 핵심입니다.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>웹 접근성의 주요 원칙</h2>
+        <table>
+          <caption>
+            웹 접근성(WCAG)의 4대 원칙
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">원칙</th>
+              <th scope="col">설명</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">인지성</th>
+              <td>모든 내용은 사용자에게 인지할 수 있게 제공되어야 합니다.</td>
+            </tr>
+            <tr>
+              <th scope="row">운용성</th>
+              <td>
+                모든 기능은 키보드 등 다양한 수단으로 조작될 수 있어야 합니다.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">이해성</th>
+              <td>정보와 사용자 인터페이스는 쉽게 이해할 수 있어야 합니다.</td>
+            </tr>
+            <tr>
+              <th scope="row">견고성</th>
+              <td>콘텐츠는 다양한 사용자 도구에서 해석될 수 있어야 합니다.</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul>
+          <li>스크린리더, 고대비 등 보조기기 지원 필수</li>
+          <li>키보드 내비게이션 및 명확한 포커스 표시 제공</li>
+        </ul>
+      </section>
+
+      <section tabindex="0" aria-label="웹 접근성 실천 방법">
+        <h2>실천 방법 예시</h2>
+        <ul>
+          <li>시맨틱 태그 사용 및 레이블 제공</li>
+          <li>충분한 색상 대비와 명확한 포커스 상태 디자인</li>
+          <li>대체 텍스트(alt) 및 자막 등 멀티미디어 접근성 지원</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+/* 모달 기본 숨김, 활성화 시 보이기 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  .modal[aria-hidden="false"] {
+    display: flex;
+  }
+  
+  /* 모달 내용 */
+  .modal-content {
+    background: #fff;
+    padding: 32px 24px 24px 24px;
+    border-radius: 6px;
+    max-width: 340px;
+    width: 100%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    outline: none;
+  }
+  .close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    cursor: pointer;
+  }
+  .close:focus {
+    outline: 2px solid #333;
+  }
+  .modal-content input,
+  .modal-content button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px 8px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+  }
+  .modal-content label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .modal-content a {
+    display: inline-block;
+    margin: 8px 0 8px 0;
+    color: #0066cc;
+  }
+  .modal-content button[type="submit"] {
+    background: #0066cc;
+    color: #fff;
+    border: none;
+    margin-top: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .modal-content button[type="submit"]:focus {
+    outline: 2px solid #222;
+  }
+  

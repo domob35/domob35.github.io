@@ -1,0 +1,77 @@
+body {
+    background: #ede2db;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+  }
+  header, main, section, footer {
+    margin: 10px 0;
+    padding: 0 16px;
+  }
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  nav a {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  nav a:focus, nav a:hover {
+    outline: 2px solid #222;
+    background: #ebf4fa;
+  }
+  nav button {
+    color: #0066cc;
+    text-decoration: none;
+    padding: 2px 12px;
+    border: none;
+    border-radius: 4px;
+  }
+  nav button:focus, nav button:hover {
+    outline: 2px solid #222;
+    background: #ebf4fa;
+  }
+  h1, h2 {
+    color: #004486;
+  }
+  figure {
+    margin: 18px 0;
+    text-align: center;
+  }
+  img {
+    max-width: 50%;
+    height: auto;
+    border: 2px solid #191919;
+    border-radius: 6px;
+  }
+  form div {
+    margin-bottom: 14px;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+  }
+  button {
+    background: #ede2db;
+    color: #444343;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  form button:focus, form button:hover {
+    outline: 1px solid #222;
+    background: #ebf4fa;
+  }
+  

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>접근성 준수 웹 페이지</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="inquirymodal.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="주요 메뉴">
+        <ul>
+          <li><a href="#main" tabindex="0">홈</a></li>
+          <li><a href="about.html" tabindex="0">소개</a></li>
+          <li>
+            <button type="button" id="openModalLink">로그인</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <section aria-labelledby="about-title">
+        <h1 id="about-title" tabindex="0">웹 접근성 콘텐츠 만들기</h1>
+        <p tabindex="0">
+          이 페이지는 웹 접근성의 핵심 요소들을 포함하여 누구나 쉽게 사용할 수
+          있도록 제작되었습니다.
+        </p>
+        <figure>
+          <img
+            tabindex="0"
+            src="/img/Image1.png"
+            alt="성인 남성이 책상 앞에 앉아서 컴퓨터를 사용하는 모습"
+          />
+        </figure>
+      </section>
+      <section>
+        <h2 tabindex="0">문의하기 입력 폼</h2>
+        <form>
+          <div>
+            <label for="username">이름</label>
+            <input id="username" name="username" type="text" required />
+          </div>
+          <div>
+            <label for="email">이메일</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div>
+            <label for="message">메시지</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+          <button type="submit">전송</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <small tabindex="0">&copy; 2025 접근성 준수 페이지</small>
+    </footer>
+    <div
+      id="modal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      aria-hidden="true"
+      tabindex="-1"
+    >
+      <div class="modal-content">
+        <button type="button" id="closeModal" class="close" aria-label="닫기">
+          &times;
+        </button>
+        <h2 id="modalTitle">로그인</h2>
+        <form>
+          <div>
+            <label for="loginId">아이디</label>
+            <input
+              type="text"
+              id="loginId"
+              name="loginId"
+              autocomplete="username"
+            />
+          </div>
+          <div>
+            <label for="loginPw">비밀번호</label>
+            <input
+              type="password"
+              id="loginPw"
+              name="loginPw"
+              autocomplete="current-password"
+            />
+          </div>
+          <div>
+            <button type="button" tabindex="0">아이디/비밀번호 찾기</button>
+          </div>
+          <button type="submit">로그인</button>
+        </form>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  </body>
+</html>
