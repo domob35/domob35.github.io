@@ -51,3 +51,15 @@ modal.addEventListener('keydown', function(e) {
       }
     }
   });  
+  document.querySelectorAll('.clearBtn').forEach(button => {
+    button.addEventListener('click', function() {
+      const targetId = this.getAttribute('data-target');
+      const input = document.getElementById(targetId);
+      if (input) {
+        input.value = '';
+        input.focus();  // 내용 지우고 해당 입력창에 포커스를 이동
+      }
+    });
+  });
+  
+  

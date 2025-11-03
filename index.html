@@ -34,19 +34,43 @@
         </figure>
       </section>
       <section>
-        <h2 tabindex="0">문의하기 입력 폼</h2>
-        <form>
+        <h2>문의하기 입력 폼</h2>
+        <form id="inquiryForm">
           <div>
             <label for="username">이름</label>
             <input id="username" name="username" type="text" required />
+            <button
+              type="button"
+              class="clearBtn"
+              data-target="username"
+              aria-label="이름 입력창 내용 삭제하기"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
           </div>
           <div>
             <label for="email">이메일</label>
             <input id="email" name="email" type="email" required />
+            <button
+              type="button"
+              class="clearBtn"
+              data-target="email"
+              aria-label="이메일 입력창 내용 삭제하기"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
           </div>
           <div>
             <label for="message">메시지</label>
             <textarea id="message" name="message"></textarea>
+            <button
+              type="button"
+              class="clearBtn"
+              data-target="message"
+              aria-label="메시지 입력창 내용 삭제하기"
+            >
+              <span aria-hidden="true">X</span>
+            </button>
           </div>
           <button type="submit">전송</button>
         </form>
